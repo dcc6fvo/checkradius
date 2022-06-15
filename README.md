@@ -1,8 +1,8 @@
 # checkradius
 
-*A simple Radius checker for Linux*
+*A simple Radius checker for Zabbix/Linux*
 
-This is a simple way to test a radius server in the Linux terminal. It can be used as a Zabbix external script. If the script returns 1 it means you were successfully authenticated, otherwise it returns 0 for a bad authentication. The script can also display the radtest output with a -v parameter.
+This is a simple way to test a radius server in the Zabbix or Linux terminal. It has to be used as a "external script" in the Zabbix environment. If the script returns 1 it means you were successfully authenticated, otherwise it returns 0 for a bad authentication. The script can also display the radtest output with a -v parameter.
 
 <img src="https://freeradius.org/img/wordmark.svg?width=64"/>
 
