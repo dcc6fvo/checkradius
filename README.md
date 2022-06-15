@@ -28,12 +28,12 @@ $ sudo chmod +x checkradius.sh
 Then we will start the Zabbix configuration. Go to Zabbix Server Web Interface, then Configuration > Hosts > Create Host and create a JMX interface putting the radius server IP and port and save the new host.  
 
 **Step 4:**
-The next step we enter in the fresh new host created in step 2, choose Items and "Create Item". Then we change the type of the item to "External check". 
-On the "key" field you should do something like (change this example with your need):
+In the final step we enter in the fresh new host created in step 2, choose Items and "Create Item". Then we change the type of the item to "External check". On the "key" field you should do something like (change this example with your need):
 
 ```
 checkradius.sh["-u felipe.volpato", "-p 123456", "-a 172.16.70.2", "-o 1812",  "-s myradiussecret"]
 ```
+You are ready to go!
 
 # Usage - Linux
 
