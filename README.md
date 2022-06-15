@@ -14,6 +14,7 @@ This is a simple way to test a radius server in the Zabbix or Linux terminal. It
 
 # Usage - Zabbix
 
+First of all, it is necessary to install the script inside the "external scripts" of a given zabbix agent.
 
 # Usage - Linux
 
