@@ -14,24 +14,21 @@ This is a simple way to test a radius server in the Zabbix or Linux terminal. It
 
 # Usage - Zabbix
 
+**Step 1:**
 First of all, it is necessary to install the script inside the "external scripts" of a given zabbix agent. In a Debian 10 install you should find this folder on: /usr/lib/zabbix/externalscripts. In this case we will use the zabbix server agent itself.
 
-Step 1:
-
+**Step 1:**
 In the next step just copy the checkradius.sh from this repository to /usr/lib/zabbix/externalscripts/checkradius.sh. Check the file execution permission:
 
 ```
 $ sudo chmod +x checkradius.sh
 ```
 
-Step 2:
-
+**Step 3:**
 Then we will start the Zabbix configuration. Go to Zabbix Server Web Interface, then Configuration > Hosts > Create Host and create a JMX interface putting the radius server IP and port and save the new host.  
 
-Step 3:
-
+**Step 4:**
 The next step we enter in the fresh new host created in step 2, choose Items and "Create Item". Then we change the type of the item to "External check". 
-
 On the "key" field you should do something like (change this example with your need):
 
 ```
