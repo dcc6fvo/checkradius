@@ -9,8 +9,13 @@ This is a simple way to test a radius server in the Zabbix or Linux terminal. It
 # Requirements
 
 * radtest (freeradius-utils debian package)
+* zabbix-agent (for zabbix usage)
 
-# Usage
+
+# Usage - Zabbix
+
+
+# Usage - Linux
 
 ```
 ./checkradius.sh -u john -p 1234 -a 191.52.0.25 -o 1812 -s myradiussecret
